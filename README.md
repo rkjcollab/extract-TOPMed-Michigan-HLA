@@ -70,7 +70,7 @@ docker run -d --name my_temp_container your-dockerhub-username/your-repo:latest
 ```
 
 ## License
-This project is licensed under the [Apache License 2.0](LICENSE).
+See the license document for information on licensing.  
 
 ## Contact
 If you have any questions, feel free to open an issue.
