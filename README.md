@@ -1,6 +1,6 @@
 # Extract TOPMed and Michigan HLA
 
-<img src="T1GRS.png" alt="Logo" width="200"/>
+<img src="t1grs_logo.jpeg" alt="Logo" width="200"/>
 
 
 [![Docker Build Status](https://img.shields.io/docker/build/kgaultonlab/t1d-grs-analysis-r3-xgboost.svg)](https://hub.docker.com/repository/docker/kgaultonlab/t1d-grs-analysis)
