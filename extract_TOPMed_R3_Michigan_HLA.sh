@@ -115,17 +115,17 @@ echo "Step 3: Combining VCF files"
 
 header_file="chr1_Topmed_r3.vcf.gz"
 
-zcat "$header_file" | awk '/^#CHROM/ && !header_printed { print; header_printed=1 }' > ${OUTPUT_VCF}
+gunzip -c "$header_file" | awk '/^#CHROM/ && !header_printed { print; header_printed=1 }' > ${OUTPUT_VCF}
 
 
 for chr in {1..22}; do
 
-   zcat chr${chr}_Topmed_r3.vcf.gz | awk '!/^#/ { print }' >> ${OUTPUT_VCF}
+   gunzip -c chr${chr}_Topmed_r3.vcf.gz | awk '!/^#/ { print }' >> ${OUTPUT_VCF}
 
 done
 
 
-zcat Michigan_HLA.vcf.gz | awk '!/^#/ { print }' >> ${OUTPUT_VCF}
+gunzip -c Michigan_HLA.vcf.gz | awk '!/^#/ { print }' >> ${OUTPUT_VCF}
 
 
 stopdt=$(date '+%d/%m/%Y %H:%M:%S')
